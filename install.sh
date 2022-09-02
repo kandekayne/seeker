@@ -18,10 +18,7 @@ status_check() {
 debian_install() {
     echo -e '=====================\nINSTALLING FOR DEBIAN\n=====================\n' > "$ILOG"
 
-    echo -ne 'Python3\r'
-    sudo apt -y install python3 python3-pip &>> "$ILOG"
-    status_check Python3
-    echo -e '\n--------------------\n' >> "$ILOG"
+   
 
     echo -ne 'PIP\r'
     sudo apt -y install python3-pip &>> "$ILOG"
